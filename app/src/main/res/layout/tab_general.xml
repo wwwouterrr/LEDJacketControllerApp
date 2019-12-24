@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:padding="@dimen/tab_padding"
+             android:layout_height="match_parent"
+             tools:context=".TabGeneral">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overall brightness"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/sliderBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:max="255"
+            android:progress="100" />
+
+        <RadioGroup
+            android:id="@+id/rgModes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mode"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbDemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Demo" />
+
+            <RadioButton
+                android:id="@+id/rbText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Text" />
+
+            <RadioButton
+                android:id="@+id/rbEffects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Effects" />
+
+            <RadioButton
+                android:id="@+id/rbAlternate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alternate between Text and Effects" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="Show text every (s)" />
+
+            <SeekBar
+                android:id="@+id/sliderShowTextEvery"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:labelFor="@id/textShowTextEvery"
+                android:max="20"
+                android:progress="12"
+                android:tag="5" />
+
+            <TextView
+                android:id="@+id/textShowTextEvery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:textAlignment="textEnd"
+                android:textStyle="italic" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</FrameLayout>

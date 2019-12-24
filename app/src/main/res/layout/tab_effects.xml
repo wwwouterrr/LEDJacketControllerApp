@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="@dimen/tab_padding"
+             tools:context=".TabGeneral">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Effect Type"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerEffectType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colour palette"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerEffectPalette"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <CheckBox
+            android:id="@+id/cbEffectColourLoop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colour loop" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/sliderEffectSpeed"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:labelFor="@id/textEffectSpeed"
+            android:max="50"
+            android:progress="6"
+            android:tag="1" />
+
+        <TextView
+            android:id="@+id/textEffectSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textAlignment="textEnd"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scale"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/sliderEffectScale"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:labelFor="@id/textEffectScale"
+            android:max="10"
+            android:progress="3"
+            android:tag="1" />
+
+        <TextView
+            android:id="@+id/textEffectScale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textAlignment="textEnd"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fadeout"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/sliderEffectFade"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:labelFor="@id/textEffectFade"
+            android:max="30"
+            android:progress="15"
+            android:tag="5" />
+
+        <TextView
+            android:id="@+id/textEffectFade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="75"
+            android:textAlignment="textEnd"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</FrameLayout>

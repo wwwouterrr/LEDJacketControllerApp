@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="@dimen/tab_padding"
+             tools:context=".TabGeneral">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/displayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="40"
+            android:selectAllOnFocus="true"
+            android:text="Enter text" />
+
+        <Button
+            android:id="@+id/buttonSetText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/display" />
+
+        <TextView
+            android:id="@+id/labelTimePerCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_per_character_ms"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/sliderTimePerCharacter"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:labelFor="@id/textTimePerCharacter"
+            android:max="20"
+            android:progress="5"
+            android:tag="50" />
+
+        <TextView
+            android:id="@+id/textTimePerCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="250"
+            android:textAlignment="textEnd"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/labelBlankBetween"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_between_characters_ms"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/sliderBlankBetween"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:labelFor="@id/textsBlankBetween"
+            android:max="20"
+            android:progress="5"
+            android:tag="25" />
+
+        <TextView
+            android:id="@+id/textsBlankBetween"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="125"
+            android:textAlignment="textEnd"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/labelFadeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fadeout"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/sliderFadeout"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:labelFor="@id/textFadeout"
+            android:max="30"
+            android:progress="15"
+            android:tag="5" />
+
+        <TextView
+            android:id="@+id/textFadeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="75"
+            android:textAlignment="textEnd"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colour palette"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerTextPalette"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <CheckBox
+            android:id="@+id/cbFlashColours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fast flashing colours" />
+
+    </LinearLayout>
+</FrameLayout>
